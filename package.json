@@ -1,0 +1,35 @@
+{
+  "name": "queues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all -p dev:*",
+    "dev:server": "nodemon src/index.js",
+    "dev:queue": "nodemon src/queue.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^3.12.1",
+    "date-fns": "^2.8.1",
+    "date-fns-tz": "^1.0.8",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "sucrase": "^3.10.1"
+  }
+}
